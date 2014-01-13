@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8332D1051F9F474EA0453E22 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ACEC4F095745B7B393641B /* libPods.a */; };
+		A102B4E31875BE1A002BFACA /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A102B4E11875BE1A002BFACA /* ProjectsViewController.m */; };
+		A103EA6D187317D000DA1CD5 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A103EA6B187317D000DA1CD5 /* FormViewController.m */; };
+		A103EA6E187317D000DA1CD5 /* FormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A103EA6C187317D000DA1CD5 /* FormView.xib */; };
+		A1256B5518773BC000AB5C92 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A1256B5218773BC000AB5C92 /* Project.m */; };
+		A1256B5618773BC000AB5C92 /* RemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1256B5418773BC000AB5C92 /* RemoteObject.m */; };
+		A1256B5C1877409D00AB5C92 /* _Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A1256B5B1877409D00AB5C92 /* _Project.m */; };
+		A1256B62187740E500AB5C92 /* _RemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1256B61187740E500AB5C92 /* _RemoteObject.m */; };
+		A163180E1871EFDC00615611 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A163180C1871EFDC00615611 /* TableViewController.m */; };
+		A163180F1871EFDC00615611 /* ProjectsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A163180D1871EFDC00615611 /* ProjectsView.xib */; };
+		A17A4FF118839342001E0F22 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17A4FF018839342001E0F22 /* SecondView.xib */; };
+		A1EC808018838EEE0063E2AF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1EC807E18838EEE0063E2AF /* Model.xcdatamodeld */; };
+		A1F6C65D186CCC6200AD6673 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F6C65C186CCC6200AD6673 /* UIKit.framework */; };
+		A1F6C65F186CCC6200AD6673 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F6C65E186CCC6200AD6673 /* Foundation.framework */; };
+		A1F6C661186CCC6200AD6673 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F6C660186CCC6200AD6673 /* CoreGraphics.framework */; };
+		A1F6C667186CCC6200AD6673 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C665186CCC6200AD6673 /* InfoPlist.strings */; };
+		A1F6C669186CCC6200AD6673 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F6C668186CCC6200AD6673 /* main.m */; };
+		A1F6C66D186CCC6200AD6673 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F6C66C186CCC6200AD6673 /* AppDelegate.m */; };
+		A1F6C66F186CCC6200AD6673 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C66E186CCC6200AD6673 /* Default.png */; };
+		A1F6C671186CCC6200AD6673 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C670186CCC6200AD6673 /* Default@2x.png */; };
+		A1F6C673186CCC6200AD6673 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C672186CCC6200AD6673 /* Default-568h@2x.png */; };
+		A1F6C678186CCC6200AD6673 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C677186CCC6200AD6673 /* first.png */; };
+		A1F6C67A186CCC6200AD6673 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C679186CCC6200AD6673 /* first@2x.png */; };
+		A1F6C67D186CCC6200AD6673 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F6C67C186CCC6200AD6673 /* SecondViewController.m */; };
+		A1F6C67F186CCC6200AD6673 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C67E186CCC6200AD6673 /* second.png */; };
+		A1F6C681186CCC6200AD6673 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C680186CCC6200AD6673 /* second@2x.png */; };
+		A1F6C68F186CCC6300AD6673 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F6C68E186CCC6300AD6673 /* SenTestingKit.framework */; };
+		A1F6C690186CCC6300AD6673 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F6C65C186CCC6200AD6673 /* UIKit.framework */; };
+		A1F6C691186CCC6300AD6673 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F6C65E186CCC6200AD6673 /* Foundation.framework */; };
+		A1F6C699186CCC6300AD6673 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C697186CCC6300AD6673 /* InfoPlist.strings */; };
+		A1F6C69C186CCC6300AD6673 /* myTRackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F6C69B186CCC6300AD6673 /* myTRackerTests.m */; };
+		A1F6C6A7186CCCC500AD6673 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F6C6A6186CCCC500AD6673 /* LoginViewController.m */; };
+		A1F6C6A9186CCCF300AD6673 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F6C6A8186CCCF300AD6673 /* LoginView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1F6C692186CCC6300AD6673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1F6C651186CCC6200AD6673 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1F6C658186CCC6200AD6673;
+			remoteInfo = myTRacker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54ACEC4F095745B7B393641B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C7219C097D49DE887B63C3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A102B4E01875BE19002BFACA /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectsViewController.h; path = Controller/ProjectsViewController.h; sourceTree = "<group>"; };
+		A102B4E11875BE1A002BFACA /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectsViewController.m; path = Controller/ProjectsViewController.m; sourceTree = "<group>"; };
+		A103EA6A187317D000DA1CD5 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormViewController.h; path = Controller/FormViewController.h; sourceTree = "<group>"; };
+		A103EA6B187317D000DA1CD5 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormViewController.m; path = Controller/FormViewController.m; sourceTree = "<group>"; };
+		A103EA6C187317D000DA1CD5 /* FormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormView.xib; path = View/FormView.xib; sourceTree = "<group>"; };
+		A1256B5118773BC000AB5C92 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = myTRacker/Model/Project.h; sourceTree = "<group>"; };
+		A1256B5218773BC000AB5C92 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = myTRacker/Model/Project.m; sourceTree = "<group>"; };
+		A1256B5318773BC000AB5C92 /* RemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteObject.h; path = myTRacker/Model/RemoteObject.h; sourceTree = "<group>"; };
+		A1256B5418773BC000AB5C92 /* RemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteObject.m; path = myTRacker/Model/RemoteObject.m; sourceTree = "<group>"; };
+		A1256B5A1877409D00AB5C92 /* _Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Project.h; path = myTRacker/Model/_Project.h; sourceTree = "<group>"; };
+		A1256B5B1877409D00AB5C92 /* _Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Project.m; path = myTRacker/Model/_Project.m; sourceTree = "<group>"; };
+		A1256B60187740E500AB5C92 /* _RemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _RemoteObject.h; path = myTRacker/Model/_RemoteObject.h; sourceTree = "<group>"; };
+		A1256B61187740E500AB5C92 /* _RemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _RemoteObject.m; path = myTRacker/Model/_RemoteObject.m; sourceTree = "<group>"; };
+		A163180B1871EFDC00615611 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = Controller/TableViewController.h; sourceTree = "<group>"; };
+		A163180C1871EFDC00615611 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = Controller/TableViewController.m; sourceTree = "<group>"; };
+		A163180D1871EFDC00615611 /* ProjectsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectsView.xib; path = View/ProjectsView.xib; sourceTree = "<group>"; };
+		A17A4FF018839342001E0F22 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SecondView.xib; path = ../../myTracker/myTracker/View/SecondView.xib; sourceTree = "<group>"; };
+		A1EC807F18838EEE0063E2AF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A1F6C659186CCC6200AD6673 /* myTRacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTRacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F6C65C186CCC6200AD6673 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1F6C65E186CCC6200AD6673 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1F6C660186CCC6200AD6673 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1F6C664186CCC6200AD6673 /* myTRacker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "myTRacker-Info.plist"; path = "../../myTracker/myTracker/Resources/myTRacker-Info.plist"; sourceTree = "<group>"; };
+		A1F6C666186CCC6200AD6673 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1F6C668186CCC6200AD6673 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../myTracker/myTracker/Resources/main.m; sourceTree = "<group>"; };
+		A1F6C66A186CCC6200AD6673 /* myTRacker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "myTRacker-Prefix.pch"; path = "../../myTracker/myTracker/Resources/myTRacker-Prefix.pch"; sourceTree = "<group>"; };
+		A1F6C66B186CCC6200AD6673 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1F6C66C186CCC6200AD6673 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1F6C66E186CCC6200AD6673 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../myTracker/myTracker/Resources/Images/Default.png; sourceTree = "<group>"; };
+		A1F6C670186CCC6200AD6673 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../myTracker/myTracker/Resources/Images/Default@2x.png"; sourceTree = "<group>"; };
+		A1F6C672186CCC6200AD6673 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../myTracker/myTracker/Resources/Images/Default-568h@2x.png"; sourceTree = "<group>"; };
+		A1F6C677186CCC6200AD6673 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = ../../myTracker/myTracker/Resources/Images/first.png; sourceTree = "<group>"; };
+		A1F6C679186CCC6200AD6673 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "../../myTracker/myTracker/Resources/Images/first@2x.png"; sourceTree = "<group>"; };
+		A1F6C67B186CCC6200AD6673 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = Controller/SecondViewController.h; sourceTree = "<group>"; };
+		A1F6C67C186CCC6200AD6673 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = Controller/SecondViewController.m; sourceTree = "<group>"; };
+		A1F6C67E186CCC6200AD6673 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = ../../myTracker/myTracker/Resources/Images/second.png; sourceTree = "<group>"; };
+		A1F6C680186CCC6200AD6673 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "../../myTracker/myTracker/Resources/Images/second@2x.png"; sourceTree = "<group>"; };
+		A1F6C68D186CCC6300AD6673 /* myTRackerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myTRackerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F6C68E186CCC6300AD6673 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A1F6C696186CCC6300AD6673 /* myTRackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myTRackerTests-Info.plist"; sourceTree = "<group>"; };
+		A1F6C698186CCC6300AD6673 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1F6C69A186CCC6300AD6673 /* myTRackerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myTRackerTests.h; sourceTree = "<group>"; };
+		A1F6C69B186CCC6300AD6673 /* myTRackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myTRackerTests.m; sourceTree = "<group>"; };
+		A1F6C6A5186CCCC500AD6673 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controller/LoginViewController.h; sourceTree = "<group>"; };
+		A1F6C6A6186CCCC500AD6673 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controller/LoginViewController.m; sourceTree = "<group>"; };
+		A1F6C6A8186CCCF300AD6673 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginView.xib; path = View/LoginView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1F6C656186CCC6200AD6673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6C65D186CCC6200AD6673 /* UIKit.framework in Frameworks */,
+				A1F6C65F186CCC6200AD6673 /* Foundation.framework in Frameworks */,
+				A1F6C661186CCC6200AD6673 /* CoreGraphics.framework in Frameworks */,
+				8332D1051F9F474EA0453E22 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6C689186CCC6300AD6673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6C68F186CCC6300AD6673 /* SenTestingKit.framework in Frameworks */,
+				A1F6C690186CCC6300AD6673 /* UIKit.framework in Frameworks */,
+				A1F6C691186CCC6300AD6673 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A102B4E51875E162002BFACA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A103EA6A187317D000DA1CD5 /* FormViewController.h */,
+				A103EA6B187317D000DA1CD5 /* FormViewController.m */,
+				A1F6C6A5186CCCC500AD6673 /* LoginViewController.h */,
+				A1F6C6A6186CCCC500AD6673 /* LoginViewController.m */,
+				A163180B1871EFDC00615611 /* TableViewController.h */,
+				A163180C1871EFDC00615611 /* TableViewController.m */,
+				A1F6C67B186CCC6200AD6673 /* SecondViewController.h */,
+				A1F6C67C186CCC6200AD6673 /* SecondViewController.m */,
+				A102B4E01875BE19002BFACA /* ProjectsViewController.h */,
+				A102B4E11875BE1A002BFACA /* ProjectsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A102B4E61875E185002BFACA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A17A4FF018839342001E0F22 /* SecondView.xib */,
+				A103EA6C187317D000DA1CD5 /* FormView.xib */,
+				A1F6C6A8186CCCF300AD6673 /* LoginView.xib */,
+				A163180D1871EFDC00615611 /* ProjectsView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A102B4E71875E1C5002BFACA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1EC807E18838EEE0063E2AF /* Model.xcdatamodeld */,
+				A1256B5D187740A600AB5C92 /* RemoteObject */,
+				A1256B571877400000AB5C92 /* Project */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A102B4E81875E457002BFACA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6C677186CCC6200AD6673 /* first.png */,
+				A1F6C679186CCC6200AD6673 /* first@2x.png */,
+				A1F6C67E186CCC6200AD6673 /* second.png */,
+				A1F6C680186CCC6200AD6673 /* second@2x.png */,
+				A1F6C66E186CCC6200AD6673 /* Default.png */,
+				A1F6C670186CCC6200AD6673 /* Default@2x.png */,
+				A1F6C672186CCC6200AD6673 /* Default-568h@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A1256B571877400000AB5C92 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				A1256B591877408600AB5C92 /* Machine */,
+				A1256B581877407800AB5C92 /* Model */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		A1256B581877407800AB5C92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1256B5118773BC000AB5C92 /* Project.h */,
+				A1256B5218773BC000AB5C92 /* Project.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A1256B591877408600AB5C92 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				A1256B5A1877409D00AB5C92 /* _Project.h */,
+				A1256B5B1877409D00AB5C92 /* _Project.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		A1256B5D187740A600AB5C92 /* RemoteObject */ = {
+			isa = PBXGroup;
+			children = (
+				A1256B5F187740D600AB5C92 /* Machine */,
+				A1256B5E187740C800AB5C92 /* Model */,
+			);
+			name = RemoteObject;
+			sourceTree = "<group>";
+		};
+		A1256B5E187740C800AB5C92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1256B5318773BC000AB5C92 /* RemoteObject.h */,
+				A1256B5418773BC000AB5C92 /* RemoteObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A1256B5F187740D600AB5C92 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				A1256B60187740E500AB5C92 /* _RemoteObject.h */,
+				A1256B61187740E500AB5C92 /* _RemoteObject.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		A1F6C650186CCC6200AD6673 = {
+			isa = PBXGroup;
+			children = (
+				A1F6C662186CCC6200AD6673 /* myTracker */,
+				A1F6C694186CCC6300AD6673 /* myTrackerTests */,
+				A1F6C65B186CCC6200AD6673 /* Frameworks */,
+				A1F6C65A186CCC6200AD6673 /* Products */,
+				81C7219C097D49DE887B63C3 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A1F6C65A186CCC6200AD6673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6C659186CCC6200AD6673 /* myTRacker.app */,
+				A1F6C68D186CCC6300AD6673 /* myTRackerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1F6C65B186CCC6200AD6673 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6C65C186CCC6200AD6673 /* UIKit.framework */,
+				A1F6C65E186CCC6200AD6673 /* Foundation.framework */,
+				A1F6C660186CCC6200AD6673 /* CoreGraphics.framework */,
+				A1F6C68E186CCC6300AD6673 /* SenTestingKit.framework */,
+				54ACEC4F095745B7B393641B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1F6C662186CCC6200AD6673 /* myTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A102B4E71875E1C5002BFACA /* Model */,
+				A102B4E61875E185002BFACA /* View */,
+				A102B4E51875E162002BFACA /* Controller */,
+				A1F6C66B186CCC6200AD6673 /* AppDelegate.h */,
+				A1F6C66C186CCC6200AD6673 /* AppDelegate.m */,
+				A1F6C663186CCC6200AD6673 /* Resources */,
+			);
+			path = myTracker;
+			sourceTree = "<group>";
+		};
+		A1F6C663186CCC6200AD6673 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A102B4E81875E457002BFACA /* Images */,
+				A1F6C664186CCC6200AD6673 /* myTRacker-Info.plist */,
+				A1F6C665186CCC6200AD6673 /* InfoPlist.strings */,
+				A1F6C668186CCC6200AD6673 /* main.m */,
+				A1F6C66A186CCC6200AD6673 /* myTRacker-Prefix.pch */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A1F6C694186CCC6300AD6673 /* myTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6C69A186CCC6300AD6673 /* myTRackerTests.h */,
+				A1F6C69B186CCC6300AD6673 /* myTRackerTests.m */,
+				A1F6C695186CCC6300AD6673 /* Supporting Files */,
+			);
+			name = myTrackerTests;
+			path = myTRackerTests;
+			sourceTree = "<group>";
+		};
+		A1F6C695186CCC6300AD6673 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6C696186CCC6300AD6673 /* myTRackerTests-Info.plist */,
+				A1F6C697186CCC6300AD6673 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1F6C658186CCC6200AD6673 /* myTRacker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F6C69F186CCC6300AD6673 /* Build configuration list for PBXNativeTarget "myTRacker" */;
+			buildPhases = (
+				296A4D6C607443AE9DEBDF88 /* Check Pods Manifest.lock */,
+				A1F6C655186CCC6200AD6673 /* Sources */,
+				A1F6C656186CCC6200AD6673 /* Frameworks */,
+				A1F6C657186CCC6200AD6673 /* Resources */,
+				7E4C0AE50BB2477E8E9291FE /* Copy Pods Resources */,
+				A179E01218772C7600919611 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myTRacker;
+			productName = myTRacker;
+			productReference = A1F6C659186CCC6200AD6673 /* myTRacker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1F6C68C186CCC6300AD6673 /* myTRackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F6C6A2186CCC6300AD6673 /* Build configuration list for PBXNativeTarget "myTRackerTests" */;
+			buildPhases = (
+				A1F6C688186CCC6300AD6673 /* Sources */,
+				A1F6C689186CCC6300AD6673 /* Frameworks */,
+				A1F6C68A186CCC6300AD6673 /* Resources */,
+				A1F6C68B186CCC6300AD6673 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1F6C693186CCC6300AD6673 /* PBXTargetDependency */,
+			);
+			name = myTRackerTests;
+			productName = myTRackerTests;
+			productReference = A1F6C68D186CCC6300AD6673 /* myTRackerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1F6C651186CCC6200AD6673 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = A1F6C654186CCC6200AD6673 /* Build configuration list for PBXProject "myTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1F6C650186CCC6200AD6673;
+			productRefGroup = A1F6C65A186CCC6200AD6673 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1F6C658186CCC6200AD6673 /* myTRacker */,
+				A1F6C68C186CCC6300AD6673 /* myTRackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1F6C657186CCC6200AD6673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6C667186CCC6200AD6673 /* InfoPlist.strings in Resources */,
+				A1F6C66F186CCC6200AD6673 /* Default.png in Resources */,
+				A1F6C671186CCC6200AD6673 /* Default@2x.png in Resources */,
+				A1F6C673186CCC6200AD6673 /* Default-568h@2x.png in Resources */,
+				A1F6C678186CCC6200AD6673 /* first.png in Resources */,
+				A1F6C67A186CCC6200AD6673 /* first@2x.png in Resources */,
+				A1F6C67F186CCC6200AD6673 /* second.png in Resources */,
+				A1F6C681186CCC6200AD6673 /* second@2x.png in Resources */,
+				A1F6C6A9186CCCF300AD6673 /* LoginView.xib in Resources */,
+				A163180F1871EFDC00615611 /* ProjectsView.xib in Resources */,
+				A103EA6E187317D000DA1CD5 /* FormView.xib in Resources */,
+				A17A4FF118839342001E0F22 /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6C68A186CCC6300AD6673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6C699186CCC6300AD6673 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		296A4D6C607443AE9DEBDF88 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E4C0AE50BB2477E8E9291FE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A179E01218772C7600919611 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/mogenerator --template-var arc=true -m \"${PROJECT_DIR}/myTracker/Model/Model.xcdatamodeld/Model.xcdatamodel\" -M \"${PROJECT_DIR}/myTracker/Model\" -H \"${PROJECT_DIR}/myTracker/Model\"";
+		};
+		A1F6C68B186CCC6300AD6673 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1F6C655186CCC6200AD6673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6C669186CCC6200AD6673 /* main.m in Sources */,
+				A1F6C66D186CCC6200AD6673 /* AppDelegate.m in Sources */,
+				A1F6C67D186CCC6200AD6673 /* SecondViewController.m in Sources */,
+				A1F6C6A7186CCCC500AD6673 /* LoginViewController.m in Sources */,
+				A163180E1871EFDC00615611 /* TableViewController.m in Sources */,
+				A103EA6D187317D000DA1CD5 /* FormViewController.m in Sources */,
+				A102B4E31875BE1A002BFACA /* ProjectsViewController.m in Sources */,
+				A1256B5518773BC000AB5C92 /* Project.m in Sources */,
+				A1256B5618773BC000AB5C92 /* RemoteObject.m in Sources */,
+				A1256B5C1877409D00AB5C92 /* _Project.m in Sources */,
+				A1256B62187740E500AB5C92 /* _RemoteObject.m in Sources */,
+				A1EC808018838EEE0063E2AF /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F6C688186CCC6300AD6673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6C69C186CCC6300AD6673 /* myTRackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1F6C693186CCC6300AD6673 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F6C658186CCC6200AD6673 /* myTRacker */;
+			targetProxy = A1F6C692186CCC6300AD6673 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1F6C665186CCC6200AD6673 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1F6C666186CCC6200AD6673 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = ../../myTracker/myTracker/Resources;
+			sourceTree = "<group>";
+		};
+		A1F6C697186CCC6300AD6673 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1F6C698186CCC6300AD6673 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1F6C69D186CCC6300AD6673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1F6C69E186CCC6300AD6673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1F6C6A0186CCC6300AD6673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C7219C097D49DE887B63C3 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myTracker/Resources/myTracker-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/../myTracker/myTracker/Resources/myTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A1F6C6A1186CCC6300AD6673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C7219C097D49DE887B63C3 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myTracker/Resources/myTracker-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/../myTracker/myTracker/Resources/myTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A1F6C6A3186CCC6300AD6673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myTRacker.app/myTRacker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myTRacker/myTRacker-Prefix.pch";
+				INFOPLIST_FILE = "myTRackerTests/myTRackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A1F6C6A4186CCC6300AD6673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myTRacker.app/myTRacker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myTRacker/myTRacker-Prefix.pch";
+				INFOPLIST_FILE = "myTRackerTests/myTRackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1F6C654186CCC6200AD6673 /* Build configuration list for PBXProject "myTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F6C69D186CCC6300AD6673 /* Debug */,
+				A1F6C69E186CCC6300AD6673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F6C69F186CCC6300AD6673 /* Build configuration list for PBXNativeTarget "myTRacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F6C6A0186CCC6300AD6673 /* Debug */,
+				A1F6C6A1186CCC6300AD6673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F6C6A2186CCC6300AD6673 /* Build configuration list for PBXNativeTarget "myTRackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F6C6A3186CCC6300AD6673 /* Debug */,
+				A1F6C6A4186CCC6300AD6673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1EC807E18838EEE0063E2AF /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1EC807F18838EEE0063E2AF /* Model.xcdatamodel */,
+			);
+			currentVersion = A1EC807F18838EEE0063E2AF /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = myTRacker/Model/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A1F6C651186CCC6200AD6673 /* Project object */;
+}
