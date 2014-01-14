@@ -9,15 +9,12 @@
 #import "TableViewController.h"
 #import "FormViewController.h"
 #import "ProjectsViewController.h"
-//#import "Project.h"
 
 @interface TableViewController ()
 
 @end
 
 @implementation TableViewController
-
-//@synthesize managedObjectContext = _managedObjectContext;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -60,10 +57,9 @@
 
 - (void)showProjects
 {
-    ProjectsViewController *projectViewController = [[ProjectsViewController alloc]initWithNibName:@"ProjectsViewController" bundle:nil];
-    projectViewController.managedObjectContext = self.managedObjectContext;
+    self.projectsViewController.managedObjectContext = self.managedObjectContext;
     
-    [self presentViewController:projectViewController animated:YES completion:nil];
+    [self presentViewController:self.projectsViewController animated:YES completion:nil];
 }
 
 #pragma mark - Table view data source

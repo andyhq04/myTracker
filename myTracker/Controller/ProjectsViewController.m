@@ -105,21 +105,21 @@
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
+    if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    
+    if([indexPath compare:self.lastIndexPath] == NSOrderedSame) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
     }
     
     [self configureCell:cell atIndexPath:indexPath];
     
     return cell;
 }
-
-/*-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
- {
- FormViewController *loginViewController = [[FormViewController alloc]initWithNibName:@"FormViewController" bundle:nil];
- [self.navigationController pushViewController:loginViewController animated:YES];
- }*/
 
 /*
  // Override to support conditional editing of the table view.
@@ -254,8 +254,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*FormViewController *loginViewController = [[FormViewController alloc]initWithNibName:@"FormViewController" bundle:nil];
-    [self.navigationController pushViewController:loginViewController animated:YES];*/
+    self.lastIndexPath = indexPath;
+    [tableView reloadData];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
