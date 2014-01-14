@@ -44,9 +44,9 @@
 
 - (void)showProjects
 {
-    ProjectsViewController *loginViewController = [[ProjectsViewController alloc]initWithNibName:@"ProjectsViewController" bundle:nil];
+    self.projectsViewController.managedObjectContext = self.managedObjectContext;
     
-    [self presentViewController:loginViewController animated:YES completion:nil];
+    [self presentViewController:self.projectsViewController animated:YES completion:nil];
 }
 
 @end

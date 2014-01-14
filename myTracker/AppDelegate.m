@@ -21,14 +21,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    ProjectsViewController *projectViewController = [[ProjectsViewController alloc]initWithNibName:@"ProjectsViewController" bundle:nil];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Override point for customization after application launch.
-    UITableViewController *viewController1 = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:nil];
+    TableViewController *viewController1 = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:nil];
+    viewController1.projectsViewController = projectViewController;
     UINavigationController *navigationController1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
     [navigationController1 setToolbarHidden:NO];
     
-    UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    SecondViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    viewController2.projectsViewController = projectViewController;
     UINavigationController *navigationController2 = [[UINavigationController alloc] initWithRootViewController:viewController2];
     [navigationController2 setToolbarHidden:NO];
 
@@ -142,11 +146,11 @@
     // Override point for customization after application launch.
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     TableViewController *controller = (TableViewController *)((UINavigationController *)tabBarController.viewControllers[0]).topViewController;
-    //NSLog(@"tab %@", (self.window.rootViewController));
     controller.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
-    //NSLog(@"main %@", managedObjectStore.mainQueueManagedObjectContext.class);
-    //NSLog(@"controller %@", controller);
     
+    SecondViewController *controller1 = (SecondViewController *)((UINavigationController *)tabBarController.viewControllers[1]).topViewController;
+    controller1.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
+
     
     /*UITabBarController *tbc = (UITabBarController *)self.window.rootViewController;
     UINavigationController *navigationController = tbc.viewControllers[3];
