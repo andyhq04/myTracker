@@ -120,15 +120,15 @@
     
     // Configure the object manager
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://localhost:3000/"]];
-    [[objectManager HTTPClient] setDefaultHeader:@"X-Login-Token" value:@"pMFEThFPJSgeRsfei"];
+    [[objectManager HTTPClient] setDefaultHeader:@"X-Login-Token" value:@"WySKtLx96qr83Tog6"];
     [[objectManager HTTPClient] setDefaultHeader:@"X-User-Id" value:@"SGfE7i6DubfXJ7LBo"];
     
     objectManager.managedObjectStore = managedObjectStore;
     
     [RKObjectManager setSharedManager:objectManager];
     
-    RKEntityMapping *entityMapping = [RKEntityMapping mappingForEntityForName:@"Project" inManagedObjectStore:managedObjectStore];
-    [entityMapping addAttributeMappingsFromDictionary:@{
+    RKEntityMapping *projectMapping = [RKEntityMapping mappingForEntityForName:@"Project" inManagedObjectStore:managedObjectStore];
+    [projectMapping addAttributeMappingsFromDictionary:@{
      @"_id": @"id",
      @"name": @"name",
      @"description": @"desc",
@@ -137,9 +137,26 @@
      @"startAt": @"startAt",
      @"createdAt": @"createdAt",
      @"updatedAt": @"updatedAt"}];
-    entityMapping.identificationAttributes = @[ @"id" ];
+    projectMapping.identificationAttributes = @[@"id"];
     
-    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:entityMapping method:RKRequestMethodGET pathPattern:@"api/projects" keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    RKResponseDescriptor *projectResponseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:projectMapping method:RKRequestMethodGET pathPattern:@"api/projects" keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    
+    [objectManager addResponseDescriptor:projectResponseDescriptor];
+    
+    RKEntityMapping *entityMapping = [RKEntityMapping mappingForEntityForName:@"Story" inManagedObjectStore:managedObjectStore];
+    [entityMapping addAttributeMappingsFromDictionary:@{
+     @"_id": @"id",
+     @"title": @"title",
+     @"description": @"desc",
+     @"type": @"type",
+     @"status": @"status",
+     @"points": @"points",
+     @"project_id": @"project_id",
+     @"createdAt": @"createdAt",
+     @"updatedAt": @"updatedAt"}];
+    entityMapping.identificationAttributes = @[@"id"];
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:entityMapping method:RKRequestMethodGET pathPattern:@"api/projects/QB4wnfjxKbai7xjXY/stories" keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
     
     [objectManager addResponseDescriptor:responseDescriptor];
     
@@ -150,24 +167,6 @@
     
     SecondViewController *controller1 = (SecondViewController *)((UINavigationController *)tabBarController.viewControllers[1]).topViewController;
     controller1.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
-
-    
-    /*UITabBarController *tbc = (UITabBarController *)self.window.rootViewController;
-    UINavigationController *navigationController = tbc.viewControllers[3];
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;*/
-    
-    
-   /* RKObjectManager *manager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://localhost:3000/api"]];
-    
-    [[manager HTTPClient] setDefaultHeader:@"X-Login-Token" value:@"PqdeiofJfyis74oqs"];
-    [[manager HTTPClient] setDefaultHeader:@"X-User-Id" value:@"SGfE7i6DubfXJ7LBo"];
-    
-    NSManagedObjectModel *managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
-    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:managedObjectModel];
-    manager.managedObjectStore = managedObjectStore;
-    
-    manager.loadObjectsAtResourcePath:@"/projects" objectClass:[Project class] delegate:self];*/
 }
 
 @end
