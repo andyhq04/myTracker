@@ -73,12 +73,15 @@
     [[RKObjectManager sharedManager] setAcceptHeaderWithMIMEType:@"text/html"];
     NSLog(@"%@", [RKMIMETypeSerialization registeredMIMETypes]);
     [[RKObjectManager sharedManager] getObjectsAtPath:@"api/projects" parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        [[self tableView] reloadData];
         [self.refreshControl endRefreshing];
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         [self.refreshControl endRefreshing];
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"An Error Has Occurred" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
     }];
+    
+    [self.refreshControl endRefreshing];
 }
 
 #pragma mark - Table view data source

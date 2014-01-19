@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8332D1051F9F474EA0453E22 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ACEC4F095745B7B393641B /* libPods.a */; };
 		A102B4E31875BE1A002BFACA /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A102B4E11875BE1A002BFACA /* ProjectsViewController.m */; };
+		A102D7C818862D7100484D22 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = A102D7C718862D7100484D22 /* Story.m */; };
+		A102D7CB18862D7F00484D22 /* _Story.m in Sources */ = {isa = PBXBuildFile; fileRef = A102D7CA18862D7F00484D22 /* _Story.m */; };
 		A103EA6D187317D000DA1CD5 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A103EA6B187317D000DA1CD5 /* FormViewController.m */; };
 		A103EA6E187317D000DA1CD5 /* FormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A103EA6C187317D000DA1CD5 /* FormView.xib */; };
 		A1256B5518773BC000AB5C92 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A1256B5218773BC000AB5C92 /* Project.m */; };
@@ -57,6 +59,10 @@
 		81C7219C097D49DE887B63C3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A102B4E01875BE19002BFACA /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectsViewController.h; path = Controller/ProjectsViewController.h; sourceTree = "<group>"; };
 		A102B4E11875BE1A002BFACA /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectsViewController.m; path = Controller/ProjectsViewController.m; sourceTree = "<group>"; };
+		A102D7C618862D7100484D22 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Story.h; path = myTracker/Model/Story.h; sourceTree = "<group>"; };
+		A102D7C718862D7100484D22 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Story.m; path = myTracker/Model/Story.m; sourceTree = "<group>"; };
+		A102D7C918862D7F00484D22 /* _Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Story.h; path = myTracker/Model/_Story.h; sourceTree = "<group>"; };
+		A102D7CA18862D7F00484D22 /* _Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Story.m; path = myTracker/Model/_Story.m; sourceTree = "<group>"; };
 		A103EA6A187317D000DA1CD5 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormViewController.h; path = Controller/FormViewController.h; sourceTree = "<group>"; };
 		A103EA6B187317D000DA1CD5 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormViewController.m; path = Controller/FormViewController.m; sourceTree = "<group>"; };
 		A103EA6C187317D000DA1CD5 /* FormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormView.xib; path = View/FormView.xib; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 		A102B4E71875E1C5002BFACA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A102D7C318862D4100484D22 /* Story */,
 				A1EC807E18838EEE0063E2AF /* Model.xcdatamodeld */,
 				A1256B5D187740A600AB5C92 /* RemoteObject */,
 				A1256B571877400000AB5C92 /* Project */,
@@ -179,6 +186,33 @@
 				A1F6C672186CCC6200AD6673 /* Default-568h@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		A102D7C318862D4100484D22 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				A102D7C518862D5500484D22 /* Model */,
+				A102D7C418862D4D00484D22 /* Machine */,
+			);
+			name = Story;
+			sourceTree = "<group>";
+		};
+		A102D7C418862D4D00484D22 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				A102D7C918862D7F00484D22 /* _Story.h */,
+				A102D7CA18862D7F00484D22 /* _Story.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		A102D7C518862D5500484D22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A102D7C618862D7100484D22 /* Story.h */,
+				A102D7C718862D7100484D22 /* Story.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		A1256B571877400000AB5C92 /* Project */ = {
@@ -486,6 +520,8 @@
 				A1256B5C1877409D00AB5C92 /* _Project.m in Sources */,
 				A1256B62187740E500AB5C92 /* _RemoteObject.m in Sources */,
 				A1EC808018838EEE0063E2AF /* Model.xcdatamodeld in Sources */,
+				A102D7C818862D7100484D22 /* Story.m in Sources */,
+				A102D7CB18862D7F00484D22 /* _Story.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
