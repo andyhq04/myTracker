@@ -13,10 +13,12 @@
 		A102D7CB18862D7F00484D22 /* _Story.m in Sources */ = {isa = PBXBuildFile; fileRef = A102D7CA18862D7F00484D22 /* _Story.m */; };
 		A103EA6D187317D000DA1CD5 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A103EA6B187317D000DA1CD5 /* FormViewController.m */; };
 		A103EA6E187317D000DA1CD5 /* FormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A103EA6C187317D000DA1CD5 /* FormView.xib */; };
+		A10BF44C1890624B00A07B50 /* APIConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = A10BF44B1890624B00A07B50 /* APIConnector.m */; };
 		A1256B5518773BC000AB5C92 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A1256B5218773BC000AB5C92 /* Project.m */; };
 		A1256B5618773BC000AB5C92 /* RemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1256B5418773BC000AB5C92 /* RemoteObject.m */; };
 		A1256B5C1877409D00AB5C92 /* _Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A1256B5B1877409D00AB5C92 /* _Project.m */; };
 		A1256B62187740E500AB5C92 /* _RemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A1256B61187740E500AB5C92 /* _RemoteObject.m */; };
+		A1330EEA188CAC780098067D /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A1330EE9188CAC780098067D /* MappingProvider.m */; };
 		A163180E1871EFDC00615611 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A163180C1871EFDC00615611 /* TableViewController.m */; };
 		A163180F1871EFDC00615611 /* ProjectsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A163180D1871EFDC00615611 /* ProjectsView.xib */; };
 		A17A4FF118839342001E0F22 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17A4FF018839342001E0F22 /* SecondView.xib */; };
@@ -66,6 +68,8 @@
 		A103EA6A187317D000DA1CD5 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormViewController.h; path = Controller/FormViewController.h; sourceTree = "<group>"; };
 		A103EA6B187317D000DA1CD5 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormViewController.m; path = Controller/FormViewController.m; sourceTree = "<group>"; };
 		A103EA6C187317D000DA1CD5 /* FormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormView.xib; path = View/FormView.xib; sourceTree = "<group>"; };
+		A10BF44A1890624B00A07B50 /* APIConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConnector.h; sourceTree = "<group>"; };
+		A10BF44B1890624B00A07B50 /* APIConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConnector.m; sourceTree = "<group>"; };
 		A1256B5118773BC000AB5C92 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = myTRacker/Model/Project.h; sourceTree = "<group>"; };
 		A1256B5218773BC000AB5C92 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = myTRacker/Model/Project.m; sourceTree = "<group>"; };
 		A1256B5318773BC000AB5C92 /* RemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteObject.h; path = myTRacker/Model/RemoteObject.h; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 		A1256B5B1877409D00AB5C92 /* _Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Project.m; path = myTRacker/Model/_Project.m; sourceTree = "<group>"; };
 		A1256B60187740E500AB5C92 /* _RemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _RemoteObject.h; path = myTRacker/Model/_RemoteObject.h; sourceTree = "<group>"; };
 		A1256B61187740E500AB5C92 /* _RemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _RemoteObject.m; path = myTRacker/Model/_RemoteObject.m; sourceTree = "<group>"; };
+		A1330EE8188CAC780098067D /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
+		A1330EE9188CAC780098067D /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingProvider.m; sourceTree = "<group>"; };
 		A163180B1871EFDC00615611 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = Controller/TableViewController.h; sourceTree = "<group>"; };
 		A163180C1871EFDC00615611 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = Controller/TableViewController.m; sourceTree = "<group>"; };
 		A163180D1871EFDC00615611 /* ProjectsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectsView.xib; path = View/ProjectsView.xib; sourceTree = "<group>"; };
@@ -310,6 +316,10 @@
 				A1F6C66B186CCC6200AD6673 /* AppDelegate.h */,
 				A1F6C66C186CCC6200AD6673 /* AppDelegate.m */,
 				A1F6C663186CCC6200AD6673 /* Resources */,
+				A1330EE8188CAC780098067D /* MappingProvider.h */,
+				A1330EE9188CAC780098067D /* MappingProvider.m */,
+				A10BF44A1890624B00A07B50 /* APIConnector.h */,
+				A10BF44B1890624B00A07B50 /* APIConnector.m */,
 			);
 			path = myTracker;
 			sourceTree = "<group>";
@@ -522,6 +532,8 @@
 				A1EC808018838EEE0063E2AF /* Model.xcdatamodeld in Sources */,
 				A102D7C818862D7100484D22 /* Story.m in Sources */,
 				A102D7CB18862D7F00484D22 /* _Story.m in Sources */,
+				A1330EEA188CAC780098067D /* MappingProvider.m in Sources */,
+				A10BF44C1890624B00A07B50 /* APIConnector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

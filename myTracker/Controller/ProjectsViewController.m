@@ -9,6 +9,8 @@
 #import "ProjectsViewController.h"
 #import "Project.h"
 
+#import "APIConnector.h"
+
 @interface ProjectsViewController ()
 
 @end
@@ -63,16 +65,8 @@
 
 - (void)loadProjects
 {
-    
-    [[RKObjectManager sharedManager].HTTPClient setDefaultHeader:@"Accept" value:RKMIMETypeJSON];
-    [[RKObjectManager sharedManager].HTTPClient setDefaultHeader:@"Content-Type" value:RKMIMETypeJSON];
-    //    [[RKObjectManager sharedManager].HTTPClient setDefaultHeader:@"Content-Type" value:];
-    [RKMIMETypeSerialization registerClass:[RKMIMETypeTextXML class] forMIMEType:@"text/html"];
-    [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/json"];
-    //[RKMIMETypeSerialization registerClass:[RKMIMETypeTextXML class] forMIMEType:@"text/json"];
-    [[RKObjectManager sharedManager] setAcceptHeaderWithMIMEType:@"text/html"];
-    NSLog(@"%@", [RKMIMETypeSerialization registeredMIMETypes]);
-    [[RKObjectManager sharedManager] getObjectsAtPath:@"api/projects" parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+    APIConnector *connector = [APIConnector sharedInstance];
+    [connector loadProjects:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         [[self tableView] reloadData];
         [self.refreshControl endRefreshing];
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {

@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "FormViewController.h"
 #import "ProjectsViewController.h"
+#import "APIConnector.h"
 
 #import "Story.h"
 
@@ -37,6 +38,7 @@
     if (self) {
         self.title = NSLocalizedString(@"Stories", @"Stories");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        self.managedObjectContext = APIConnector.sharedInstance.managedObjectStore.mainQueueManagedObjectContext;
     }
     return self;
 }
@@ -67,26 +69,17 @@
 
 - (void)showProjects
 {
-    self.projectsViewController.managedObjectContext = self.managedObjectContext;
+    self.projectsViewController.managedObjectContext = APIConnector.sharedInstance.managedObjectStore.mainQueueManagedObjectContext;
     
     [self presentViewController:self.projectsViewController animated:YES completion:nil];
 }
 
 - (void)loadStories
 {
-    
-    [[RKObjectManager sharedManager].HTTPClient setDefaultHeader:@"Accept" value:RKMIMETypeJSON];
-    [[RKObjectManager sharedManager].HTTPClient setDefaultHeader:@"Content-Type" value:RKMIMETypeJSON];
-    //    [[RKObjectManager sharedManager].HTTPClient setDefaultHeader:@"Content-Type" value:];
-    [RKMIMETypeSerialization registerClass:[RKMIMETypeTextXML class] forMIMEType:@"text/html"];
-    [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/json"];
-    //[RKMIMETypeSerialization registerClass:[RKMIMETypeTextXML class] forMIMEType:@"text/json"];
-    [[RKObjectManager sharedManager] setAcceptHeaderWithMIMEType:@"text/html"];
-    NSLog(@"%@", [RKMIMETypeSerialization registeredMIMETypes]);
-    [[RKObjectManager sharedManager] getObjectsAtPath:@"api/projects/QB4wnfjxKbai7xjXY/stories"  parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+    APIConnector *connector = [APIConnector sharedInstance];
+    [connector loadStoriesByProject:123 success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         [self.refreshControl endRefreshing];
         NSLog(@"Fetched count %d",[self.fetchedResultsController.fetchedObjects count]);
-       // [self.tableView reloadData];
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         [self.refreshControl endRefreshing];
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"An Error Has Occurred" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -122,9 +115,6 @@
     }
     
     [self configureCell:cell atIndexPath:indexPath];
-
-//    cell.textLabel.text = @"hello world";
-    
    
     return cell;
 }
